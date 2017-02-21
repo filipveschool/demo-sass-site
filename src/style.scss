@@ -1,10 +1,236 @@
+//Libraries
 
+@import "../bower_components/brand-colors/dist/latest/scss/brand-colors.latest";
 
-@import "variables/breakpoints-variables";
-@import "variables/grid-variables";
+// Functions, Variables, and Mixins
+// =============================================================================
+// All variables
+@import "variables/colors";
+@import "variables/global-variables";
+@import "variables/links-variables";
+@import "variables/button-variables";
+@import "variables/body-variables";
+@import "variables/alert-variables";
+@import "variables/box-model";
+@import "variables/css3-transitions";
 @import "variables/header-variables";
 @import "variables/footer-variables";
-@import "variables/font-awesome-variables";
-@import "variables/z-index-master-variables";
+@import "variables/navbar-variables";
+@import "variables/colophon-variables";
+@import "variables/dropdown-variables";
+@import "variables/font-variables";
+@import "variables/forms";
+@import "variables/form-states-variables";
+@import "variables/breakpoints-variables";
+@import "variables/grid-variables";
+@import "variables/headings-variables";
+@import "variables/placeholder-variables";
+@import "variables/plugin-variables";
+@import "variables/popovers-variables";
+@import "variables/shapes-variables";
+@import "variables/site-variables";
+@import "variables/spacing-helpers-variables";
+@import "variables/table-variables";
 @import "variables/tooltip-variables";
+@import "variables/typography-variables";
+@import "variables/widget-variables";
+@import "variables/z-index-master-variables";
+@import "variables/buddypress-variables";
+@import "variables/mejs-variables";
+@import "variables/font-awesome-variables";
+@import "variables/theme-variables";
 
+
+
+// Global Settings for mixins
+@import "inc/settings/prefixer-mixins-settings";
+@import "inc/settings/px-to-em";
+@import "inc/settings/asset-pipeline";
+//@import "inc/settings/";
+// Global Functions
+@import "inc/functions/assign-inputs";
+@import "inc/functions/contains";
+@import "inc/functions/contains-falsy";
+@import "inc/functions/convert-number-to-word";
+@import "inc/functions/is-length";
+@import "inc/functions/is-light";
+@import "inc/functions/is-number";
+@import "inc/functions/is-size";
+@import "inc/functions/px-to-em";
+@import "inc/functions/px-to-rem";
+@import "inc/functions/shade";
+@import "inc/functions/strip-units";
+@import "inc/functions/tint";
+@import "inc/functions/transition-property-name";
+@import "inc/functions/unpack";
+@import "inc/functions/modular-scale";
+// Global Helper files
+@import "inc/helpers/convert-units";
+@import "inc/helpers/directional-values";
+@import "inc/helpers/font-source-declaration";
+@import "inc/helpers/gradient-positions-parser";
+@import "inc/helpers/linear-angle-parser";
+@import "inc/helpers/linear-gradient-parser";
+@import "inc/helpers/linear-positions-parser";
+@import "inc/helpers/linear-side-corner-parser";
+@import "inc/helpers/radial-arg-parser";
+@import "inc/helpers/radial-positions-parser";
+@import "inc/helpers/radial-gradient-parser";
+@import "inc/helpers/render-gradients";
+@import "inc/helpers/shape-size-stripper";
+@import "inc/helpers/str-to-num";
+
+//mixins
+@import "inc/mixins";
+
+// Global placeholders
+@import "inc/placeholders/currencies";
+
+// CSS Normalization
+// =============================================================================
+@import "norm/universal-border-box";
+@import "norm/normalize";
+
+// Grid System and Page Structure
+// =============================================================================
+//@import "base/alignments";
+@import "base/alignmentsThemeXRenew";
+@import "base/scaffolding";
+
+// Base CSS
+// =============================================================================
+@import "base/type";
+@import "base/code";
+@import "base/forms";
+@import "modules/_tables.scss";
+
+// Components
+// =============================================================================
+
+@import "modules/buttons";
+@import "inc/component-animations";
+@import "modules/searchform-overlay";
+@import "modules/dropdowns";
+@import "modules/widgetbar";
+@import "modules/topbar";
+@import "modules/logobar";
+@import "modules/navbar";
+@import "modules/navs";
+@import "modules/megamenu";
+@import "modules/breadcrumbs";
+@import "media/pagination";
+@import "modules/tooltips";
+@import "modules/popovers";
+@import "media/flexslider";
+@import "media/integrated-sliders";
+@import "media/isotope";
+@import "media/ilightbox";
+@import "modules/social";
+@import "modules/scroll-top";
+
+
+// Shortcodes
+// =============================================================================
+
+@import "shortcodes/container";
+@import "shortcodes/gap";
+@import "shortcodes/clear";
+@import "shortcodes/map";
+@import "shortcodes/code";
+@import "shortcodes/icon";
+@import "shortcodes/block-grid";
+@import "shortcodes/icon-list";
+@import "shortcodes/video";
+@import "shortcodes/responsive-slider";
+@import "shortcodes/audio";
+@import "shortcodes/search";
+@import "shortcodes/counter";
+@import "shortcodes/text-type";
+@import "shortcodes/card";
+@import "shortcodes/creative-cta";
+@import "shortcodes/feature-box";
+@import "shortcodes/feature-list";
+@import "shortcodes/dropcap";
+@import "shortcodes/horizontal-rule";
+@import "shortcodes/highlight";
+@import "shortcodes/quote";
+@import "shortcodes/alert";
+@import "shortcodes/image";
+@import "shortcodes/popovers-and-tooltips";
+@import "shortcodes/text-columns";
+@import "shortcodes/accordion";
+@import "shortcodes/tabs";
+@import "shortcodes/responsive-visibility";
+@import "shortcodes/column";
+@import "shortcodes/protected-content";
+@import "shortcodes/recent-posts";
+@import "shortcodes/pricing-table";
+@import "shortcodes/callout";
+@import "shortcodes/promo";
+@import "shortcodes/post-author";
+@import "shortcodes/prompt";
+@import "shortcodes/content-band";
+@import "shortcodes/entry-share";
+@import "shortcodes/skill-bar";
+@import "shortcodes/table-of-contents";
+@import "shortcodes/custom-headline";
+@import "shortcodes/feature-headline";
+@import "shortcodes/section";
+
+@import "shortcodes/mejs";
+
+// Unique Site Styles
+// =============================================================================
+
+@import "modules/masthead";
+@import "modules/colophon";
+@import "modules/sidebar";
+
+//Blog
+@import "modules/blog/main-containing-element";
+@import "modules/blog/all-posts-and-pages";
+@import "modules/blog/pages";
+@import "modules/blog/posts";
+@import "modules/blog/standard-posts";
+@import "modules/blog/video-posts";
+@import "modules/blog/audio-posts";
+@import "modules/blog/image-posts";
+@import "modules/blog/gallery-posts";
+@import "modules/blog/link-posts";
+@import "modules/blog/quote-posts";
+
+// Portfolio
+@import "modules/portfolio-posts";
+// Page Templates
+@import "pages/page-templates";
+@import "pages/404-page";
+@import "modules/landmark-header";
+@import "media/captions-and-galleries";
+
+@import "modules/comments";
+@import "modules/widgets";
+
+// Print Styles
+// =============================================================================
+
+@import "inc/print";
+
+// Animations
+// =============================================================================
+
+@import "inc/animate";
+
+// Utilities
+// =============================================================================
+
+//@import "../_scss/util/legacy";
+//@import "../_scss/util/cornerstone";
+
+// Fonts
+// =============================================================================
+
+@import "base/font-awesome";
+
+// Plugins CSS
+// =============================================================================
+@import "plugins/contact7-form";

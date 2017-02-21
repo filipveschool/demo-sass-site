@@ -1,0 +1,13 @@
+
+// BuddyPress
+// =============================================================================
+
+$bpSpacingSm:         15px                                   !default;
+$bpSpacingLg:         $bpSpacingSm * 3                       !default;
+$bpCalcSpacingSm:     25px + $bpSpacingSm                    !default;
+$bpCalcSpacingLg:     45px + $bpSpacingSm                    !default;
+$bpBorderColor:       $shortcodeBorderColor                  !default;
+$bpBorderWidth:       2px                                    !default;
+$bpBorder:            $bpBorderWidth solid $bpBorderColor    !default;
+$bpAccentColor:       #fafafa                                !default;
+$bpNavSubnavColor:    rgba(0, 0, 0, 0.35)                    !default;
