@@ -7,26 +7,19 @@
 // Functions, Variables, and Mixins
 // =============================================================================
 
-
-
-
-// Global Settings for mixins
-@import "inc/settings/prefixer-mixins-settings";
-@import "inc/settings/px-to-em";
-@import "inc/settings/asset-pipeline";
-//@import "inc/settings/";
+@import "import-settings";
 @import "import-functions";
 @import "import-helpers";
 @import "import-mixins";
 
 
 // Global placeholders
-@import "inc/placeholders/currencies";
+//@import "inc/placeholders/currencies";
 
 // CSS Normalization
 // =============================================================================
-@import "norm/universal-border-box";
-@import "norm/normalize";
+@import "base/norm/universal-border-box";
+@import "base/norm/normalize";
 
 // Grid System and Page Structure
 // =============================================================================
@@ -167,7 +160,3 @@
 // =============================================================================
 
 @import "base/font-awesome";
-
-// Plugins CSS
-// =============================================================================
-@import "plugins/contact7-form";
