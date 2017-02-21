@@ -107,7 +107,6 @@
 @import "shortcodes/feature-headline";
 @import "shortcodes/section";
 
-@import "shortcodes/mejs";
 
 // Unique Site Styles
 // =============================================================================
@@ -116,21 +115,6 @@
 @import "modules/colophon";
 @import "modules/sidebar";
 
-//Blog
-@import "modules/blog/main-containing-element";
-@import "modules/blog/all-posts-and-pages";
-@import "modules/blog/pages";
-@import "modules/blog/posts";
-@import "modules/blog/standard-posts";
-@import "modules/blog/video-posts";
-@import "modules/blog/audio-posts";
-@import "modules/blog/image-posts";
-@import "modules/blog/gallery-posts";
-@import "modules/blog/link-posts";
-@import "modules/blog/quote-posts";
-
-// Portfolio
-@import "modules/portfolio-posts";
 // Page Templates
 @import "pages/page-templates";
 @import "pages/404-page";
@@ -143,20 +127,9 @@
 // Print Styles
 // =============================================================================
 
-@import "inc/print";
-
-// Animations
-// =============================================================================
-
-@import "inc/animate";
-
-// Utilities
-// =============================================================================
-
-//@import "../_scss/util/legacy";
-//@import "../_scss/util/cornerstone";
+@import "base/print";
 
 // Fonts
 // =============================================================================
 
-@import "base/font-awesome";
+//@import "base/font-awesome";
