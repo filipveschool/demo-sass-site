@@ -13,7 +13,7 @@ let mix = require('laravel-mix');
 
 mix
 //.js('src/app.js', 'dist/')
-    .sass('themes/theme1.scss', 'dist/');
+    .sass('src/style.scss', 'dist/');
 
 //RUN "NPM RUN DEV" in commnd prompt to compile everything
 
